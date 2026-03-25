@@ -1,0 +1,47 @@
+# =====================
+# Python
+# =====================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.tmp
+
+# =====================
+# Virtual Environment
+# =====================
+venv/
+.env/
+.env
+
+# =====================
+# Jupyter Notebook
+# =====================
+.ipynb_checkpoints/
+
+# =====================
+# Data files
+# =====================
+*.csv
+*.json
+*.parquet
+*.zip
+
+# =====================
+# GCP credentials
+# =====================
+gcp-key.json
+*.key.json
+
+# =====================
+# OS files
+# =====================
+.DS_Store
+Thumbs.db
+
+# =====================
+# Docker
+# =====================
+*.tar
+docker-compose.override.yml
