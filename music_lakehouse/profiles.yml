@@ -1,0 +1,14 @@
+music_lakehouse:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'music_data.duckdb' # DuckDB sẽ tạo một file database local tên này
+      extensions:
+        - httpfs  # Extension bắt buộc để đọc S3/MinIO
+      settings:
+        s3_endpoint: localhost:9000
+        s3_access_key_id: admin
+        s3_secret_access_key: password123
+        s3_url_style: path
+        s3_use_ssl: false
